@@ -2,7 +2,7 @@ version: '3.8'
 services:
   nginx:
     image: nginx:latest
-    container_name: my-web-nginx
+    container_name: my-web-nginx-3
     ports:
       - "8083:80"
     volumes:
@@ -12,7 +12,7 @@ services:
 
   web:
     image: python:3.9-alpine
-    container_name: my-web-python
+    container_name: my-web-python-3
     volumes:
       - ./app.py:/app/app.py # Relative path for app.py
     command: sh -c "pip install redis flask && python /app/app.py"
@@ -21,4 +21,4 @@ services:
   
   redis:
     image: redis:alpine
-    container_name: my-web-redis
+    container_name: my-web-redis-3
