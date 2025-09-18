@@ -16,4 +16,4 @@ This repo contains the necessary files for the stack
 For localhost macbook testing: 
 
 - Enable relative path volumes
-- Local filesystem path: `/Users/PATH_TO_PROJECTS/portainer-test-web-stack-gitops-local`
+- Local filesystem path: `/Users/PATH_TO_PROJECT/portainer-test-web-stack-gitops-local` (`/Users/` is a path Docker can access)
